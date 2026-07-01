@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #050508;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.top-panel {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    pointer-events: auto;
+    flex-wrap: wrap;
+}
+
+.nav-item, .nav-button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 48px; 
+    padding: 0 22px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    backdrop-filter: blur(12px);
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.discord-static {
+    background: rgba(88, 101, 242, 0.06);
+    border-color: rgba(88, 101, 242, 0.15);
+    color: #ffffff;
+    cursor: default;
+}
+
+.discord-static:hover {
+    background: rgba(88, 101, 242, 0.15);
+    border-color: rgba(88, 101, 242, 0.4);
+    box-shadow: 0 0 25px rgba(88, 101, 242, 0.2);
+}
+
+.avatar-wrapper {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#discord-avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.discord-tag {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.icon {
+    width: 22px;
+    height: 22px;
+    fill: currentColor;
+    transition: transform 0.3s ease;
+}
+
+.bm-logo, .spigot-logo {
+    object-fit: contain;
+}
+
+.nav-button:hover .icon {
+    transform: scale(1.1);
+}
+
+.nav-button.tg:hover {
+    background: rgba(36, 161, 222, 0.1);
+    border-color: rgba(36, 161, 222, 0.3);
+    color: #24A1DE;
+}
+
+.nav-button.bm:hover {
+    background: rgba(0, 200, 115, 0.1);
+    border-color: rgba(0, 200, 115, 0.3);
+    color: #00c873;
+}
+
+.nav-button.spigot:hover {
+    background: rgba(239, 135, 51, 0.1);
+    border-color: rgba(239, 135, 51, 0.3);
+    color: #ef8733;
+}
+
+.nav-button.gh:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
