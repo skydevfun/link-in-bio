@@ -60,7 +60,7 @@ body {
     background: rgba(88, 101, 242, 0.06);
     border-color: rgba(88, 101, 242, 0.15);
     color: #ffffff;
-    cursor: default;
+    cursor: pointer;
 }
 
 .discord-static:hover {
@@ -212,4 +212,4 @@ body {
     background: rgba(255, 255, 255, 0.15);
     color: #ffffff;
     font-weight: 600;
-}
+}
